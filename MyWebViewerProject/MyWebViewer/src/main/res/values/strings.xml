@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">My Web Viewer</string>
+    <string name="open_web_view">Open WebView</string>
+    <string name="message">Enter the full URL below and submit.</string>
+    <string name="url_hint">Type URL here</string>
+    <string name="enable_fullscreen">Enable Fullscreen</string>
+    <string name="title_activity_web_view">Web View</string>
+    <string name="http_secure">Http Secure</string>
+    <string name="action_about">About</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="title_activity_about">About Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_message">Developed for the one and only</string>
+
+</resources>

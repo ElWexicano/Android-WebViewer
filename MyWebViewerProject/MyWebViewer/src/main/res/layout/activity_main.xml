@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/message"
+        android:id="@+id/text_view_message"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_text_url"
+        android:hint="@string/url_hint"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/text_view_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textUri" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/open_web_view"
+        android:id="@+id/button_open_view"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"
+        android:layout_below="@+id/check_box_enable"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/http_secure"
+        android:id="@+id/check_box_http_secure"
+        android:layout_below="@+id/edit_text_url"
+        android:layout_alignLeft="@+id/edit_text_url"
+        android:layout_marginBottom="20dp"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enable_fullscreen"
+        android:id="@+id/check_box_enable"
+        android:checked="false"
+        android:layout_below="@+id/check_box_http_secure"
+        android:layout_alignLeft="@+id/check_box_http_secure"
+        android:layout_marginBottom="20dp" />
+
+</RelativeLayout>
